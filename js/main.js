@@ -28,7 +28,7 @@ function updateLocal(){
 function populateButtons(){
 	$.each(videos,function(index){
 		var localString='';
-		var newButton=$('<a href="'+this.url+'" data-index="'+this.index+'" class="btn btn-primary">'+localString+this.filename+'</a>');
+		var newButton=$('<a href="'+this.url+'" data-index="'+index+'" class="btn btn-primary">'+localString+this.filename+'</a>');
 
 		if(this.local){
 			newButton.before('LOCAL: ');
@@ -41,10 +41,8 @@ function populateButtons(){
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady(){
-	alert('device ready');
 
 	$(document).ready(function(){
-		alert('jquery ready');
 		populateButtons();
 		
 
