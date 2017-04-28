@@ -40,14 +40,15 @@ function populateButtons(){
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady(){
+	alert('device ready');
 
 	$(document).ready(function(){
+		alert('jquery ready');
+		populateButtons();
 		
 
-		
 
-
-		$('#buttons').on('click','btn',function(){
+		$('#buttons').on('click','.btn',function(){
 
 			var videoBtn=$(this);
 			var video=videos[videoBtn.attr('data-index')];
