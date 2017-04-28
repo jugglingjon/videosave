@@ -14,7 +14,8 @@ if(localStorage.videos){
 	videos=JSON.parse(localStorage.videos);
 }
 else{
-	localStorage.videos=videosStarter;
+	localStorage.videos=JSON.stringify(videosStarter);
+	videos=videosStarter;
 }
 
 
