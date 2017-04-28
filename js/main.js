@@ -14,7 +14,7 @@ $(document).ready(function(){
 		        var videoElement = document.createElement('video');
 		        videoElement.controls = 'controls';
 		        videoElement.src = entry;
-		        document.videoElementById("video").appendChild(imgElement);
+		        document.getElementById("video").appendChild(imgElement);
 		    });
 		});
 	});
@@ -23,6 +23,6 @@ $(document).ready(function(){
 		var videoElement = document.createElement('video');
         videoElement.controls = 'controls';
         videoElement.src = localStorage.videourl;
-        document.videoElementById("video").appendChild(imgElement);
+        document.getElementById("video").appendChild(imgElement);
 	})
 });
