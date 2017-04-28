@@ -67,7 +67,7 @@ function onDeviceReady(){
 				        $('#buttons').empty();
 				        populateButtons();
 
-				        var videoElement = $('<video controls src="'+loclalURL+'"></video>');
+				        var videoElement = $('<video controls src="'+localURL+'"></video>');
 				        $('#video').empty();
 				        $('#video').append(videoElement);
 				    });
