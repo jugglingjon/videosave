@@ -75,7 +75,7 @@ function onDeviceReady(){
 				    });
 				});
 			}
-			if(videoBtn.hasClass('local')){
+			else if(videoBtn.hasClass('local')){
 				var videoElement = $('<video controls src="'+video.local+'"></video>');
 		        $('#video').empty();
 		        $('#video').append(videoElement);
