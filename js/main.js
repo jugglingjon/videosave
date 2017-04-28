@@ -54,7 +54,7 @@ function onDeviceReady(){
 			var videoBtn=$(this);
 			var video=videos[videoBtn.attr('data-index')];
 
-			if(navigator.online){
+			if(navigator.onLine){
 
 				requestFileSystem(PERSISTENT, 0, function(fileSystem) {
 				    var ft = new FileTransfer();
